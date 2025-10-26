@@ -86,12 +86,29 @@ PyPDF2>=3.0.1
 pandas>=2.0.0
 tiktoken>=0.5.0
 
-### now run the commands in terminal ###
+```
+### now run the commands in terminal 
+```
 
 1 FIRST
 pip install -r requirements.txt
 
 2 SECOND
 streamlit run app.py
+
+
+```
+## 📂 File Structure
+
+```
+.
+├── app.py              # The main Streamlit application logic
+├── summarizer.py       # Core AI logic (LangChain + Ollama)
+├── pdf_processor.py    # PDF text extraction and chunking
+├── utils.py            # Helper functions for Streamlit display and exports
+[cite_start]├── requirements.txt    # List of Python dependencies [cite: 2]
+[cite_start]├── .gitignore          # Tells Git to ignore files (like .env) [cite: 3]
+[cite_start]├── .env                # (Remnant) Was used for my Google API Key [cite: 1]
+└── check_models.py     # (Remnant) A helper script I wrote to test the Google API
 
 
